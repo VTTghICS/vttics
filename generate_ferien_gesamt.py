@@ -30,6 +30,8 @@ for region, url in urls.items():
         merged.events.add(event)
 
 # Datei speichern
+import os
+os.makedirs("docs", exist_ok=True)
 with open("docs/ferien_gesamt.ics", "w", encoding="utf-8") as f:
     f.write(str(merged))
 
