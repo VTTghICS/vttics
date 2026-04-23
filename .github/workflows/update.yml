@@ -23,8 +23,7 @@ jobs:
           pip install requests ics
 
       - name: Run script
-        run: python generate_calendar.py
-
+        run: python generate_ferien_gesamt.py
       - name: Commit updated ICS
         run: |
           git config user.name "github-actions"
